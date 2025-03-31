@@ -1,0 +1,848 @@
+<--Exercício 1: Crie um link (<a>) que use o atributo target="_blank" para
+abrir uma nova aba e o atributo title para descrever o que o link faz.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial=scale=1.0">
+	<title>Aba1</title>
+	</head>
+<body>
+	<h1>página 1</h1>
+	<a href="https://www.youtube.com" target="_blank" title="Clique para visitar o youtube">Visite o Exemplo</a>
+</body>
+</html>
+
+
+<--Exercício 2: Adicione um parágrafo que utilize os atributos class e id para
+identificar e aplicar estilos (mesmo que apenas textualmente) a diferentes
+partes do texto.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	    <style>
+        /* Estilos para o id */
+        #destaque {
+            font-weight: bold;
+            color: red;
+        }
+
+        /* Estilos para a classe */
+        .subtitulo {
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+	<title>Estilizando</title>
+</head>
+<body>
+	<h1>Página de exemplo</h1>
+	<p>
+        	Este é um <span id="destaque">parágrafo de exemplo</span> com um <span class="subtitulo">subtítulo estilizado</span>.
+   	 </p>
+</body>
+</html>
+
+
+<--Exercício 3: Crie um elemento de imagem (<img>) com atributos que
+definam seu tamanho (width e height), e utilize o atributo alt para
+descrever a imagem.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Luz</title>
+</head>
+<body>
+	<img href="./imagens./poste.jpg" alt="essa é uma imagem de um poste de luz" width="300" height="200">
+</body>
+</html>
+
+
+ex.7
+<-Exercício 1: Crie uma seção na sua página HTML que contenha um vídeo
+(<video>) e defina a opção de controles.->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Video</title>
+</head>
+<body>
+	<h2>Assista ao vídeo abaixo</h2>
+        <video controls width="600">
+            <source src="video_exemplo.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+</body>
+</html>
+
+<--Exercício 2: Adicione um arquivo de áudio (<audio>) que possa ser
+reproduzido na sua página e inclua controles para reprodução.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF=8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Audio</title>
+</head>
+<body>
+	<h1>Está é uma págian com um arquivo de audio</h1>
+        <audio controls>
+            <source src="audio_exemplo.mp3" type="audio/mp3">
+            Seu navegador não suporta a tag de áudio.
+        </audio>
+	
+</body>
+</html>
+
+Exercício 3: Insira um vídeo e um áudio na mesma página e adicione um
+parágrafo explicativo sobre o conteúdo de cada um.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Conteúdo</title>
+</head>
+<body>
+	<h1>Esta é uma página com um video e arquivo de audio</h1>
+	<audio controls>
+		<source src="audio_exemplo.mp3" type="audio/mp3">
+		titulo do auido
+	</audio>
+	<br>
+	<video controls width="600">
+            <source src="video_exemplo.mp4" type="video/mp4">
+            titulo do video
+        </video>
+	<p>descrição explicativa do audio e video</p>
+</body>
+</html>
+
+ex.8
+<--Exercício 1: Reestruture uma página simples utilizando elementos semânticos
+como <header>, <footer>, <nav>, e <article>, adicionando conteúdo
+relevante.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Exemplo com Elementos Semânticos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Bem-vindo ao meu site</h1>
+        <p>Descubra conteúdos interessantes e atualizações sobre tecnologia, cultura e mais!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <section>
+        <!-- Artigo 1 -->
+        <article>
+            <h2>O Impacto da Tecnologia no Mundo Atual</h2>
+            <p>A tecnologia tem transformado o mundo de maneiras profundas, afetando como trabalhamos, nos comunicamos e até como nos relacionamos com o meio ambiente...</p>
+            <p>Leia mais sobre como as inovações tecnológicas estão moldando nosso futuro, desde a inteligência artificial até a computação quântica.</p>
+        </article>
+
+        <!-- Artigo 2 -->
+        <article>
+            <h2>Transformações na Cultura Digital</h2>
+            <p>A cultura digital está em constante evolução, influenciando a forma como consumimos mídia e nos conectamos com o mundo...</p>
+            <p>Explore os últimos movimentos na música, cinema e redes sociais, que estão criando novas formas de expressão cultural.</p>
+        </article>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+<--Exercício 2: Crie um layout para um blog simples usando <section>,
+<aside>, e <main> para organizar o conteúdo.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Blog de Tecnologia</h1>
+        <p>Compartilhando as últimas novidades sobre o mundo da tecnologia</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contatos</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção principal com os posts do blog -->
+        <section>
+            <article>
+                <h2>O Futuro da Inteligência Artificial</h2>
+                <p>Com os avanços recentes, a inteligência artificial tem mudado muitos setores, desde a saúde até a educação. Neste artigo, exploramos como a IA está moldando o futuro...</p>
+                <a href="#">Leia mais</a>
+            </article>
+
+            <article>
+                <h2>Como a Computação Quântica Está Revolucionando a Tecnologia</h2>
+                <p>A computação quântica promete levar a capacidade de processamento a um nível nunca antes imaginado. Descubra o que isso significa para a próxima geração de computadores...</p>
+                <a href="#">Leia mais</a>
+            </article>
+
+            <article>
+                <h2>O Impacto das Redes 5G no Mundo Conectado</h2>
+                <p>Com a chegada do 5G, novas possibilidades estão surgindo em várias áreas. Saiba mais sobre como as redes de quinta geração podem transformar as cidades e os negócios...</p>
+                <a href="#">Leia mais</a>
+            </article>
+        </section>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Posts Recentes</h3>
+            <ul>
+                <li><a href="#">Como a IA pode mudar o futuro da educação</a></li>
+                <li><a href="#">Computadores quânticos: o que são e como funcionam</a></li>
+                <li><a href="#">5G: O que esperar da nova era da conectividade</a></li>
+                <li><a href="#">A evolução dos assistentes virtuais</a></li>
+            </ul>
+
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="#">Inteligência Artificial</a></li>
+                <li><a href="#">Computação Quântica</a></li>
+                <li><a href="#">Redes 5G</a></li>
+                <li><a href="#">Tecnologia e Inovação</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Blog de Tecnologia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+<--Exercício 3: Desenvolva uma página de eventos que utilize elementos
+semânticos para estruturar informações sobre diferentes eventos.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Imperdíveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin: 20px;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Eventos Imperdíveis</h1>
+        <p>Fique por dentro dos melhores eventos da cidade!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section>
+            <!-- Evento 1 -->
+            <article>
+                <h2>Festival de Música ao Vivo</h2>
+                <p><strong>Data:</strong> 10 de abril de 2025</p>
+                <p><strong>Local:</strong> Parque Central</p>
+                <p><strong>Descrição:</strong> Um evento incrível com bandas locais e atrações internacionais, trazendo o melhor da música ao vivo para a cidade.</p>
+                <p><strong>Ingressos:</strong> Disponíveis no site oficial.</p>
+            </article>
+
+            <!-- Evento 2 -->
+            <article>
+                <h2>Feira de Arte e Cultura</h2>
+                <p><strong>Data:</strong> 15 de abril de 2025</p>
+                <p><strong>Local:</strong> Centro Cultural</p>
+                <p><strong>Descrição:</strong> Uma feira com exposições de artistas locais, workshops e apresentações culturais. Não perca a chance de apoiar a arte local!</p>
+                <p><strong>Ingressos:</strong> Entrada gratuita.</p>
+            </article>
+
+            <!-- Evento 3 -->
+            <article>
+                <h2>Exposição de Fotografia Contemporânea</h2>
+                <p><strong>Data:</strong> 20 de abril de 2025</p>
+                <p><strong>Local:</strong> Galeria de Arte Moderna</p>
+                <p><strong>Descrição:</strong> Venha conferir as mais recentes obras de fotógrafos contemporâneos. Uma experiência visual única!</p>
+                <p><strong>Ingressos:</strong> R$20,00 (Meia-entrada disponível).</p>
+            </article>
+
+            <!-- Evento 4 -->
+            <article>
+                <h2>Maratona de Cinema</h2>
+                <p><strong>Data:</strong> 25 de abril de 2025</p>
+                <p><strong>Local:</strong> Cineplex Cinemas</p>
+                <p><strong>Descrição:</strong> 24 horas de exibição ininterrupta de filmes de diversos gêneros. Prepare-se para uma maratona épica!</p>
+                <p><strong>Ingressos:</strong> A partir de R$40,00.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Eventos Imperdíveis. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+ex.9
+
+<--Exercício 1: Crie um parágrafo com trechos de texto destacados usando
+<strong>, <em>, <small>, e <mark>. Explique o propósito de cada tag no
+seu código.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Texto com Destaques</title>
+</head>
+<body>
+    <p>
+        Durante o <strong>evento de lançamento</strong>, houve uma <em>discussão importante</em> sobre a <mark>importância da inovação</mark> no setor tecnológico. Muitos participantes destacaram o papel das <small>pequenas empresas</small> no desenvolvimento de novas soluções. O <strong>sucesso</strong> foi atribuído à colaboração entre todos os envolvidos.
+    </p>
+</body>
+</html>
+
+<--Exercício 2: Faça uma lista de citações e utilize as tags apropriadas para
+destacar as partes importantes de cada citação.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações Importantes</title>
+</head>
+<body>
+    <h1>Citações Inspiradoras</h1>
+    <ul>
+        <li>
+            <blockquote>
+                <p><strong>“O único jeito de fazer um excelente trabalho</strong> é amar o que você faz.”</p>
+                <footer>- Steve Jobs</footer>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote>
+                <p><strong><em>“A vida é o que acontece enquanto você está ocupado fazendo outros planos.”</em></strong></p>
+                <footer>- John Lennon</footer>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote>
+                <p><mark>“Não importa o quão devagar você vá, desde que você não pare.”</mark></p>
+                <footer>- Confúcio</footer>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote>
+                <p><small>“A melhor maneira de prever o futuro é criá-lo.”</small></p>
+                <footer>- Abraham Lincoln</footer>
+            </blockquote>
+        </li>
+    </ul>
+</body>
+</html>
+
+<--Exercício 3: Insira um texto que utilize a tag <blockquote> para citar uma
+fonte externa, e adicione uma referência ao autor.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citação de Fonte Externa</title>
+</head>
+<body>
+    <h1>Texto Inspirador</h1>
+    <blockquote>
+        <p>“O único limite para a nossa realização de amanhã são as nossas dúvidas e hesitações de hoje.”</p>
+        <footer>- Franklin D. Roosevelt, 1933</footer>
+    </blockquote>
+    <p>Esta citação do presidente Franklin D. Roosevelt reflete sobre a importância de superar nossas dúvidas para alcançar o sucesso. Sua mensagem continua relevante, inspirando pessoas a se desafiarem e a seguirem em frente, mesmo diante das adversidades.</p>
+</body>
+</html>
+
+ex.10
+
+<--Exercício 1: Crie um menu de navegação usando uma lista não ordenada
+(<ul>), que tenha links para diferentes seções de sua página.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navegação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Estilo para o menu */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;  /* Remove os marcadores da lista */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;  /* Coloca os itens em linha */
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        /* Estilo para as seções */
+        section {
+            padding: 50px;
+            margin: 30px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        #home { background-color: #f4f4f4; }
+        #about { background-color: #e9ecef; }
+        #services { background-color: #f8f9fa; }
+        #contact { background-color: #dcdcdc; }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seções -->
+    <section id="home">
+        <h2>Bem-vindo à Página Inicial</h2>
+        <p>Esta é a seção de introdução. Aqui você pode falar sobre sua empresa, projeto, ou qualquer outro tópico relevante.</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Esta seção fornece informações sobre sua história, missão e valores. Um ótimo lugar para contar mais sobre sua jornada.</p>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <p>Aqui, você pode listar os serviços que oferece. É uma boa oportunidade para descrever os produtos ou soluções que sua página oferece aos usuários.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Nesta seção, os visitantes podem encontrar formas de entrar em contato com você, como e-mail, telefone ou um formulário de contato.</p>
+    </section>
+
+</body>
+</html>
+
+<--Exercício 2: Adicione um menu com subitens usando listas aninhadas, onde
+um item do menu principal tem um submenu.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Subitens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Estilo para o menu */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;  /* Remove os marcadores da lista */
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;  /* Necessário para o submenu */
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        /* Estilo para o submenu */
+        nav ul li ul {
+            display: none;  /* O submenu está escondido por padrão */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            min-width: 150px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        nav ul li:hover > ul {
+            display: block;  /* O submenu aparece ao passar o mouse */
+        }
+        nav ul li ul li {
+            display: block;  /* Exibe os itens do submenu em bloco */
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li>
+                <a href="#">Serviços</a>
+                <!-- Submenu -->
+                <ul>
+                    <li><a href="#">Desenvolvimento Web</a></li>
+                    <li><a href="#">Consultoria</a></li>
+                    <li><a href="#">Design Gráfico</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seções -->
+    <section>
+        <h2>Bem-vindo à Página Inicial</h2>
+        <p>Aqui você encontrará informações sobre nossos serviços e como entrar em contato conosco.</p>
+    </section>
+
+</body>
+</html>
+
+<--Exercício 3: Crie uma barra de navegação fixa no topo da página que
+contenha links para seções específicas de conteúdo.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegação Fixa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 60px; /* Espaço para a barra fixa */
+        }
+        /* Estilo da barra de navegação fixa */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 1000; /* Garantir que fique no topo */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        /* Estilo das seções */
+        section {
+            padding: 50px;
+            margin: 50px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        #home { background-color: #f4f4f4; }
+        #about { background-color: #e9ecef; }
+        #services { background-color: #f8f9fa; }
+        #contact { background-color: #dcdcdc; }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação Fixa -->
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seções -->
+    <section id="home">
+        <h2>Bem-vindo à Página Inicial</h2>
+        <p>Esta é a seção de introdução. Aqui você pode falar sobre sua empresa, projeto ou qualquer outro tópico relevante.</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Esta seção fornece informações sobre sua história, missão e valores. Um ótimo lugar para contar mais sobre sua jornada.</p>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <p>Aqui, você pode listar os serviços que oferece. É uma boa oportunidade para descrever os produtos ou soluções que sua página oferece aos usuários.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Nesta seção, os visitantes podem encontrar formas de entrar em contato com você, como e-mail, telefone ou um formulário de contato.</p>
+    </section>
+
+</body>
+</html>
