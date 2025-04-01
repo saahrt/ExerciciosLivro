@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #61a55a;
+        }
+        header {
+            background-color: #2c6625;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+        nav{
+            background-color: #45813e;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a{
+            color: aliceblue;
+            margin: 0 15px;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            background-color: aliceblue;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        aside{
+            flex: 1;
+            background-color: aliceblue;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #foto {
+            width: 150px;
+            text-align: right;
+            border-radius: 80px;
+            border: solid rgb(255, 255, 255) 3px;
+            }
+        footer {
+            background-color: #2c6625;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: aliceblue;
+            margin: 0 15px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+     <header>
+        <h1>Nessa página você pode conferir meus principais contatos!</h1>
+    </header>
+
+    <!-- Navegação -->
+     <nav>
+        <a href="./biografia.html">Biografia</a>
+        <a href="./index.html">Home</a>
+        <a href="./contatos.html">Contatos</a>
+    </nav>
+
+        <!-- Conteúdo principal -->
+         <main>
+            <!-- Seção principal com os contatos -->
+             <section>
+                <article>
+                    <h2>E-MAIL</h2>
+                    <p>raynnasaraahb@gmail.com</p>
+                    <h2>CELULAR</h2>
+                    <p>+5522988583622</p>
+                    <h2>REDES SOCIAS</h2>
+                    <a href="https://www.linkedin.com/in/raynna-basilio-a1a5482b7/">Linkedin</a>
+                </article>
+            </section>
+
+             <!-- Barra lateral, foto, contatos, texto aleatorio --> 
+              <aside>
+                <h2>Aluno</h2>
+                <div class="container-sobreMim">
+                    <h4>Raynna Sarah</h4>
+                    <p>por enquanto somente email, celular e redes sociais :D</p>
+                    <img id="foto" src="./imagens/RS1.jpg"/>
+                  </div>
+              </aside>
+         </main>
+
+         <!-- Rodapé com contatos e link p/ portfólio (Lkd e GH)-->
+          <footer>
+            <p>&copy; 2025 Acervo de Conteúdo. <a href="https://github.com/saahrt"> Clique para acessar meu portfólio </p>
+          </footer>
+</body>
+</html>

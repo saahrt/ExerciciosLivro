@@ -1,4 +1,4 @@
-<--Exercício 1: Crie um link (<a>) que use o atributo target="_blank" para
+Exercício 1: Crie um link (<a>) que use o atributo target="_blank" para
 abrir uma nova aba e o atributo title para descrever o que o link faz.-->
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ partes do texto.-->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head<-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	    <style>

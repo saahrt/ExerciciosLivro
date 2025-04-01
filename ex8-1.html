@@ -1,0 +1,97 @@
+<!-- <--Exercício 1: Reestruture uma página simples utilizando elementos semânticos
+como <header>, <footer>, <nav>, e <article>, adicionando conteúdo
+relevante.--> 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Exemplo com Elementos Semânticos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Bem-vindo ao meu site</h1>
+        <p>Descubra conteúdos interessantes e atualizações sobre tipos de tomada!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <section>
+        <!-- Artigo 1 -->
+        <article>
+            <h2>Tipos de Tomadas Comuns no Mundo</h2>
+            <p>As tomadas variam ao redor do mundo, com diferentes padrões e voltagens dependendo da região. Conhecer as diferenças é essencial ao viajar ou ao escolher aparelhos eletrônicos.</p>
+            <p>Leia mais sobre os tipos mais comuns de tomadas e seus padrões, incluindo as diferenças entre as tomadas tipo A, B, C, e outras.</p>
+        </article>
+    
+        <!-- Artigo 2 -->
+        <article>
+            <h2>Normas e Padrões de Tomadas por País</h2>
+            <p>Além das diferenças no formato das tomadas, os países adotam voltagens e frequências distintas, o que pode influenciar na escolha dos dispositivos e adaptadores corretos.</p>
+            <p>Explore como as normas de tomadas variam entre países como os Estados Unidos, Europa e Brasil, e como escolher o adaptador certo para cada situação.</p>
+        </article>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

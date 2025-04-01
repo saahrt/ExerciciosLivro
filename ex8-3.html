@@ -1,0 +1,128 @@
+<!-- <--Exercício 3: Desenvolva uma página de eventos que utilize elementos
+semânticos para estruturar informações sobre diferentes eventos.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Imperdíveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin: 20px;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Eventos Imperdíveis</h1>
+        <p>Fique por dentro dos melhores eventos da cidade!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section>
+            <!-- Evento 1 -->
+            <article>
+                <h2>Festival de Música ao Vivo</h2>
+                <p><strong>Data:</strong> 10 de abril de 2025</p>
+                <p><strong>Local:</strong> Parque Central</p>
+                <p><strong>Descrição:</strong> Um evento incrível com bandas locais e atrações internacionais, trazendo o melhor da música ao vivo para a cidade.</p>
+                <p><strong>Ingressos:</strong> Disponíveis no site oficial.</p>
+            </article>
+
+            <!-- Evento 2 -->
+            <article>
+                <h2>Feira de Arte e Cultura</h2>
+                <p><strong>Data:</strong> 15 de abril de 2025</p>
+                <p><strong>Local:</strong> Centro Cultural</p>
+                <p><strong>Descrição:</strong> Uma feira com exposições de artistas locais, workshops e apresentações culturais. Não perca a chance de apoiar a arte local!</p>
+                <p><strong>Ingressos:</strong> Entrada gratuita.</p>
+            </article>
+
+            <!-- Evento 3 -->
+            <article>
+                <h2>Exposição de Fotografia Contemporânea</h2>
+                <p><strong>Data:</strong> 20 de abril de 2025</p>
+                <p><strong>Local:</strong> Galeria de Arte Moderna</p>
+                <p><strong>Descrição:</strong> Venha conferir as mais recentes obras de fotógrafos contemporâneos. Uma experiência visual única!</p>
+                <p><strong>Ingressos:</strong> R$20,00 (Meia-entrada disponível).</p>
+            </article>
+
+            <!-- Evento 4 -->
+            <article>
+                <h2>Maratona de Cinema</h2>
+                <p><strong>Data:</strong> 25 de abril de 2025</p>
+                <p><strong>Local:</strong> Cineplex Cinemas</p>
+                <p><strong>Descrição:</strong> 24 horas de exibição ininterrupta de filmes de diversos gêneros. Prepare-se para uma maratona épica!</p>
+                <p><strong>Ingressos:</strong> A partir de R$40,00.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Eventos Imperdíveis. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

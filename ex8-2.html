@@ -1,0 +1,129 @@
+<!-- <--Exercício 2: Crie um layout para um blog simples usando <section>,
+<aside>, e <main> para organizar o conteúdo.--> 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Blog de Tecnologia</h1>
+        <p>Compartilhando as últimas novidades sobre o mundo da tecnologia</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contatos</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção principal com os posts do blog -->
+        <section>
+            <article>
+                <h2>O Futuro da Inteligência Artificial</h2>
+                <p>Com os avanços recentes, a inteligência artificial tem mudado muitos setores, desde a saúde até a educação. Neste artigo, exploramos como a IA está moldando o futuro...</p>
+                <a href="#">Leia mais</a>
+            </article>
+
+            <article>
+                <h2>Como a Computação Quântica Está Revolucionando a Tecnologia</h2>
+                <p>A computação quântica promete levar a capacidade de processamento a um nível nunca antes imaginado. Descubra o que isso significa para a próxima geração de computadores...</p>
+                <a href="#">Leia mais</a>
+            </article>
+
+            <article>
+                <h2>O Impacto das Redes 5G no Mundo Conectado</h2>
+                <p>Com a chegada do 5G, novas possibilidades estão surgindo em várias áreas. Saiba mais sobre como as redes de quinta geração podem transformar as cidades e os negócios...</p>
+                <a href="#">Leia mais</a>
+            </article>
+        </section>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Posts Recentes</h3>
+            <ul>
+                <li><a href="#">Como a IA pode mudar o futuro da educação</a></li>
+                <li><a href="#">Computadores quânticos: o que são e como funcionam</a></li>
+                <li><a href="#">5G: O que esperar da nova era da conectividade</a></li>
+                <li><a href="#">A evolução dos assistentes virtuais</a></li>
+            </ul>
+
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="#">Inteligência Artificial</a></li>
+                <li><a href="#">Computação Quântica</a></li>
+                <li><a href="#">Redes 5G</a></li>
+                <li><a href="#">Tecnologia e Inovação</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Blog de Tecnologia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #61a55a;
+        }
+        header {
+            background-color: #2c6625;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+        nav{
+            background-color: #45813e;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a{
+            color: aliceblue;
+            margin: 0 15px;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            background-color: aliceblue;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding-bottom: 50px;
+        }
+        aside{
+            flex: 1;
+            background-color: aliceblue;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #foto {
+            width: 150px;
+            text-align: right;
+            border-radius: 80px;
+            border: solid rgb(255, 255, 255) 3px;
+            }
+        footer {
+            background-color: #2c6625;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: aliceblue;
+            margin: 0 15px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+     <header>
+        <h1>Nesta página você pode conferir os exercicios com suas descrições!</h1>
+    </header>
+
+    <!-- Navegação -->
+     <nav>
+        <a href="./biografia.html">Biografia</a>
+        <a href="./index.html">Home</a>
+        <a href="./contatos.html">Contatos</a>
+    </nav>
+
+        <!-- Conteúdo principal -->
+         <main>
+            <!-- Seção principal com os contatos -->
+             <section>
+                <article>
+                    <h2>EXERCICIOS 4</h2>
+                    <p>Exercício 1: Insira uma imagem (img) que represente um lugar que você
+                        gostaria de visitar, usando o atributo alt para descrever a imagem.</p>
+                    <a href="../ExerciciosLivro/ex4-1.html">4.1</a>
+                    <p>Exercício 2: Adicione uma galeria simples com três imagens diferentes, cada
+                        uma com um texto descritivo usando a tag figcaption</p>
+                    <a href="../ExerciciosLivro/ex4-2.html">4.2</a>
+                    <p>Exercício 3: Crie uma página que contenha uma imagem e um parágrafo
+                        explicando o que essa imagem significa para você.</p>
+                    <a href="../ExerciciosLivro/ex4-3.html">4.3</a>
+                </article>
+                <article>
+                    <h2>EXERCICIOS 5</h2>
+                    <p>Exercício 1: Crie um formulário (form) com campos para nome, email e
+                        uma mensagem. Adicione um botão de envio.</p>
+                    <a href="../ExerciciosLivro/ex5-1.html">5.1</a>
+                    <p>Exercício 2: Crie um formulário de inscrição para um evento, que inclua
+                        campos como nome, telefone, e uma opção de selecionar o tipo de evento
+                        com um select.</p>
+                    <a href="../ExerciciosLivro/ex5-2.html">5.2</a>
+                    <p>Exercício 3: Faça um formulário com botões de opção (input
+                        type="radio") para que os usuários escolham sua cor favorita, além de
+                        um campo de texto para comentários adicionais.</p>
+                    <a href="../ExerciciosLivro/ex5-3.html">5.3</a>
+                </article>
+                <article>
+                    <h2>EXERCICIOS 6</h2>
+                    <p>Exercício 1: Crie um link (<a>) que use o atributo target="_blank" para
+                        abrir uma nova aba e o atributo title para descrever o que o link faz.</p>
+                    <a href="../ExerciciosLivro/ex6-1.html">6.1</a>
+                    <p>Exercício 2: Adicione um parágrafo que utilize os atributos class e id para
+                        identificar e aplicar estilos (mesmo que apenas textualmente) a diferentes
+                        partes do texto.</p>
+                    <a href="../ExerciciosLivro/ex6-2.html">6.2</a>
+                    <p>Exercício 3: Crie um elemento de imagem (img) com atributos que
+                        definam seu tamanho (width e height), e utilize o atributo alt para
+                        descrever a imagem.</p>
+                    <a href="../ExerciciosLivro/ex6-3.html">6.3</a>
+            </article>
+            </section>
+
+             <!-- Barra lateral, foto, contatos, texto aleatorio --> 
+              <aside>
+                <h2>Aluno</h2>
+                <div class="container-sobreMim">
+                    <h4>Raynna Sarah</h4>
+                    <h5>Imagens, formulários e atributos html</h5>
+                    <blockquote>
+                        "Eu não falhei. Apenas descobri 10.000 maneiras que não funcionam."
+                        <footer>- Thomas Edison</footer>
+                    </blockquote>
+                    <img id="foto" src="./imagens/RS1.jpg"/>
+                  </div>
+              </aside>
+         </main>
+
+         <!-- Rodapé com contatos e link p/ portfólio (Lkd e GH)-->
+          <footer>
+            <p>&copy; 2025 Acervo de Conteúdo. <a href="https://github.com/saahrt"> Clique para acessar meu portfólio </p>
+          </footer>
+</body>
+</html>
